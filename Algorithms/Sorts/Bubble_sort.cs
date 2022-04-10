@@ -1,4 +1,4 @@
-public static int[] SortArray(int[] array)
+static int[] SortArray(int[] array)
 {
     int length = array.Length;
 
