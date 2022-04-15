@@ -1,0 +1,40 @@
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.csprojAssemblyReference.cache
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.Form.resources
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.Properties.Resources.resources
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.csproj.GenerateResource.cache
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.csproj.CoreCompileInputs.cache
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\bin\Debug\RGZ.exe.config
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\bin\Debug\RGZ.exe
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\bin\Debug\RGZ.pdb
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.exe
+D:\NSTU\Компьютерная графика\РГЗ\RGZ\RGZ\obj\Debug\RGZ.pdb
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.exe.config
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.exe
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.pdb
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csprojAssemblyReference.cache
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.Form.resources
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.Properties.Resources.resources
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csproj.GenerateResource.cache
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csproj.CoreCompileInputs.cache
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.exe
+D:\NSTU\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.pdb
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.exe.config
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.exe
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\bin\Debug\RGZ.pdb
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csprojAssemblyReference.cache
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.Form.resources
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.Properties.Resources.resources
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csproj.GenerateResource.cache
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.csproj.CoreCompileInputs.cache
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.exe
+D:\NSTU\1 курс\Компьютерная графика\РГЗ extra\RGZ\RGZ\obj\Debug\RGZ.pdb
+D:\Kompyuternaya_grafika\RGZ\RGZ\bin\Debug\RGZ.exe.config
+D:\Kompyuternaya_grafika\RGZ\RGZ\bin\Debug\RGZ.exe
+D:\Kompyuternaya_grafika\RGZ\RGZ\bin\Debug\RGZ.pdb
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.csprojAssemblyReference.cache
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.Form.resources
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.Properties.Resources.resources
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.csproj.GenerateResource.cache
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.csproj.CoreCompileInputs.cache
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.exe
+D:\Kompyuternaya_grafika\RGZ\RGZ\obj\Debug\RGZ.pdb
