@@ -1,0 +1,6 @@
+C:\Users\cppsh\Desktop\C# sorts\Components\bin\Debug\Gif.Components.dll
+C:\Users\cppsh\Desktop\C# sorts\Components\bin\Debug\Gif.Components.pdb
+C:\Users\cppsh\Desktop\C# sorts\Components\obj\Debug\Components.csproj.AssemblyReference.cache
+C:\Users\cppsh\Desktop\C# sorts\Components\obj\Debug\Components.csproj.CoreCompileInputs.cache
+C:\Users\cppsh\Desktop\C# sorts\Components\obj\Debug\Gif.Components.dll
+C:\Users\cppsh\Desktop\C# sorts\Components\obj\Debug\Gif.Components.pdb

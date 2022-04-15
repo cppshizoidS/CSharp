@@ -1,0 +1,5 @@
+C:\Users\cppsh\Desktop\C# sorts\SortComparison\obj\x86\Debug\SortComparison.csproj.AssemblyReference.cache
+C:\Users\cppsh\Desktop\C# sorts\SortComparison\obj\x86\Debug\SortComparison.frmMain.resources
+C:\Users\cppsh\Desktop\C# sorts\SortComparison\obj\x86\Debug\SortComparison.Properties.Resources.resources
+C:\Users\cppsh\Desktop\C# sorts\SortComparison\obj\x86\Debug\SortComparison.csproj.GenerateResource.cache
+C:\Users\cppsh\Desktop\C# sorts\SortComparison\obj\x86\Debug\SortComparison.csproj.CoreCompileInputs.cache
