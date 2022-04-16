@@ -1,5 +1,5 @@
 # Pyramid
-This repository is my final project in the subject of computer graphics. Besides the pyramid there is also a cube.
+Besides the pyramid there is also a cube.
 
 We can do the rotation by XYZ
 
