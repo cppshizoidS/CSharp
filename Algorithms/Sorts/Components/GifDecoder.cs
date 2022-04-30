@@ -1,41 +1,3 @@
-#region .NET Disclaimer/Info
-//===============================================================================
-//
-// gOODiDEA, uland.com
-//===============================================================================
-//
-// $Header :		$  
-// $Author :		$
-// $Date   :		$
-// $Revision:		$
-// $History:		$  
-//  
-//===============================================================================
-#endregion 
-
-#region Java
-/**
- * Class GifDecoder - Decodes a GIF file into one or more frames.
- * <br><pre>
- * Example:
- *    GifDecoder d = new GifDecoder();
- *    d.read("sample.gif");
- *    int n = d.getFrameCount();
- *    for (int i = 0; i < n; i++) {
- *       BufferedImage frame = d.getFrame(i);  // frame i
- *       int t = d.getDelay(i);  // display duration of frame in milliseconds
- *       // do something with frame
- *    }
- * </pre>
- * No copyright asserted on the source code of this class.  May be used for
- * any purpose, however, refer to the Unisys LZW patent for any additional
- * restrictions.  Please forward any corrections to kweiner@fmsware.com.
- *
- * @author Kevin Weiner, FM Software; LZW decoder adapted from John Cristy's ImageMagick.
- * @version 1.03 November 2003
- *
- */
-#endregion
 using System;
 using System.Collections;
 using System.Drawing;
@@ -47,19 +9,9 @@ namespace Gif.Components
 	public class GifDecoder 
 	{
 
-		/**
-		 * File read status: No errors.
-		 */
+	
 		public static readonly int STATUS_OK = 0;
-
-		/**
-		 * File read status: Error decoding file (may be partially decoded)
-		 */
 		public static readonly int STATUS_FORMAT_ERROR = 1;
-
-		/**
-		 * File read status: Unable to open source.
-		 */
 		public static readonly int STATUS_OPEN_ERROR = 2;
 
 		protected Stream inStream;
@@ -124,12 +76,6 @@ namespace Gif.Components
 			public int delay;
 		}
 
-		/**
-		 * Gets display duration for specified frame.
-		 *
-		 * @param n int index of frame
-		 * @return delay in milliseconds
-		 */
 		public int GetDelay(int n) 
 		{
 			//
@@ -141,40 +87,22 @@ namespace Gif.Components
 			return delay;
 		}
 
-		/**
-		 * Gets the number of frames read from file.
-		 * @return frame count
-		 */
 		public int GetFrameCount() 
 		{
 			return frameCount;
 		}
 
-		/**
-		 * Gets the first (or only) image read.
-		 *
-		 * @return BufferedImage containing first frame, or null if none.
-		 */
 		public Image GetImage() 
 		{
 			return GetFrame(0);
 		}
 
-		/**
-		 * Gets the "Netscape" iteration count, if any.
-		 * A count of 0 means repeat indefinitiely.
-		 *
-		 * @return iteration count if one was specified, else 1.
-		 */
 		public int GetLoopCount() 
 		{
 			return loopCount;
 		}
 
-		/**
-		 * Creates new frame image from current data (and previous
-		 * frames as specified by their disposition codes).
-		 */
+
 		int [] GetPixels( Bitmap bitmap )
 		{
 			int [] pixels = new int [ 3 * image.Width * image.Height ];
@@ -319,11 +247,7 @@ namespace Gif.Components
 			SetPixels( dest );
 		}
 
-		/**
-		 * Gets the image contents of frame n.
-		 *
-		 * @return BufferedImage representation of frame, or null if n is invalid.
-		 */
+
 		public Image GetFrame(int n) 
 		{
 			Image im = null;
@@ -334,22 +258,13 @@ namespace Gif.Components
 			return im;
 		}
 
-		/**
-		 * Gets image size.
-		 *
-		 * @return GIF image dimensions
-		 */
+
 		public Size GetFrameSize() 
 		{
 			return new Size(width, height);
 		}
 
-		/**
-		 * Reads GIF image from stream
-		 *
-		 * @param BufferedInputStream containing GIF file.
-		 * @return read status code (0 = no errors)
-		 */
+
 		public int Read( Stream inStream ) 
 		{
 			Init();
@@ -374,13 +289,7 @@ namespace Gif.Components
 			return status;
 		}
 
-		/**
-		 * Reads GIF file from specified file/URL source  
-		 * (URL assumed if name contains ":/" or "file:")
-		 *
-		 * @param name String containing source
-		 * @return read status code (0 = no errors)
-		 */
+
 		public int Read(String name) 
 		{
 			status = STATUS_OK;
@@ -397,10 +306,6 @@ namespace Gif.Components
 			return status;
 		}
 
-		/**
-		 * Decodes LZW image data into pixel array.
-		 * Adapted from John Cristy's ImageMagick.
-		 */
 		protected void DecodeImageData() 
 		{
 			int NullCode = -1;
@@ -446,7 +351,6 @@ namespace Gif.Components
 				suffix[code] = (byte) code;
 			}
 
-			//  Decode GIF pixel stream.
 
 			datum = bits = count = first = top = pi = bi = 0;
 
@@ -542,17 +446,10 @@ namespace Gif.Components
 
 		}
 
-		/**
-		 * Returns true if an error was encountered during reading/decoding
-		 */
 		protected bool Error() 
 		{
 			return status != STATUS_OK;
 		}
-
-		/**
-		 * Initializes or re-initializes reader
-		 */
 		protected void Init() 
 		{
 			status = STATUS_OK;
@@ -562,9 +459,6 @@ namespace Gif.Components
 			lct = null;
 		}
 
-		/**
-		 * Reads a single byte from the input stream.
-		 */
 		protected int Read() 
 		{
 			int curByte = 0;
@@ -579,11 +473,6 @@ namespace Gif.Components
 			return curByte;
 		}
 
-		/**
-		 * Reads next variable length block from input.
-		 *
-		 * @return number of bytes stored in "buffer"
-		 */
 		protected int ReadBlock() 
 		{
 			blockSize = Read();
@@ -613,12 +502,6 @@ namespace Gif.Components
 			return n;
 		}
 
-		/**
-		 * Reads color table as 256 RGB integer values
-		 *
-		 * @param ncolors int number of colors to read
-		 * @return int array containing 256 colors (packed ARGB with full alpha)
-		 */
 		protected int[] ReadColorTable(int ncolors) 
 		{
 			int nbytes = 3 * ncolors;
@@ -803,10 +686,6 @@ namespace Gif.Components
 
 			frameCount++;
 
-			// create new image to receive frame data
-			//		image =
-			//			new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB_PRE);
-
 			bitmap = new Bitmap( width, height );
 			image = bitmap;
 			SetPixels(); // transfer pixel data to image
@@ -884,10 +763,6 @@ namespace Gif.Components
 			lct = null;
 		}
 
-		/**
-		 * Skips variable length blocks up to and including
-		 * next zero length block.
-		 */
 		protected void Skip() 
 		{
 			do 
