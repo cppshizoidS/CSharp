@@ -5,4 +5,5 @@ This is my firts try in ![C#](https://img.shields.io/badge/c%23-%23239120.svg?st
 For future learning of Unity Enegine
 
 -----
-[![](https://tokei.rs/b1/github/cppshizoidS/CSharp)](https://github.com/cppshizoidS/CSharp)
+![](https://img.shields.io/tokei/lines/github/cppshizoidS/CSharp)
+
