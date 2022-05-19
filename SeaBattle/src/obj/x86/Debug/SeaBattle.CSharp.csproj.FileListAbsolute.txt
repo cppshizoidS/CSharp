@@ -1,0 +1,6 @@
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/bin/Debug/SeatBattle.CSharp.exe
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/bin/Debug/SeatBattle.CSharp.pdb
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/obj/x86/Debug/SeaBattle.CSharp.csproj.AssemblyReference.cache
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/obj/x86/Debug/SeaBattle.CSharp.csproj.CoreCompileInputs.cache
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/obj/x86/Debug/SeatBattle.CSharp.exe
+/home/cppshizoid/Рабочий стол/Sea-Battle-Game-master/SeaBattle/SeaBattle.CSharp/obj/x86/Debug/SeatBattle.CSharp.pdb
