@@ -33,13 +33,7 @@ namespace SeatBattle.CSharp
             CreateBoard();
         }
 
-        /// <summary>
-        ///     Creates board header cell ar a given position
-        /// </summary>
-        /// <param name="x">X coordnate of cell</param>
-        /// <param name="y">Y coordinate of cell</param>
-        /// <param name="text">Text of cell</param>
-        /// <returns></returns>
+
         private static Label CreateHeaderCell(int x, int y, string text)
         {
             var cell = new Label
@@ -55,9 +49,7 @@ namespace SeatBattle.CSharp
             return cell;
         }
 
-        /// <summary>
-        ///     Creates board headers
-        /// </summary>
+
         private void CreateHeaders()
         {
             for (var i = 0; i < BoardRegion.Width; i++)
@@ -124,20 +116,11 @@ namespace SeatBattle.CSharp
             handler(this, eventArgs);
         }
 
-        /// <summary>
-        ///     Get a ship a a given location
-        /// </summary>
-        /// <param name="x">X coordinate to check ship at</param>
-        /// <param name="y">y coordinate to check ship at</param>
-        /// <returns><see cref="Ship"/></returns>
         private Ship GetShipAt(int x, int y)
         {
             return _ships.FirstOrDefault(ship => ship.IsLocatedAt(x, y));
         }
 
-        /// <summary>
-        ///     Handles <see cref="BoardCell"/>'s MouseDown event and initiates ship drag'n'drop    
-        /// </summary>
         private void OnCellMouseDown(object sender, MouseEventArgs e)
         {
             if (Mode == BoardMode.Game || !_drawShips)
@@ -154,9 +137,7 @@ namespace SeatBattle.CSharp
             cell.DoDragDrop(ship, DragDropEffects.Copy | DragDropEffects.Move);
         }
 
-        /// <summary>
-        ///     Gives feedback for ship rotation while dragging it
-        /// </summary>
+
         private void OnCellQueryContinueDrag(object sender, QueryContinueDragEventArgs e)
         {
             // check Ctrl key state
@@ -176,9 +157,7 @@ namespace SeatBattle.CSharp
             DrawShip(_draggedShip, state);
         }
 
-        /// <summary>
-        ///     Handles <see cref="BoardCell"/>'s DragEnter event
-        /// </summary>
+
         private void OnCellDragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Ship)))
@@ -209,9 +188,7 @@ namespace SeatBattle.CSharp
 
         }
 
-        /// <summary>
-        ///     Handles <see cref="BoardCell"/>'s DragDrop event
-        /// </summary>
+
         private void OnCellDragDrop(object sender, DragEventArgs e)
         {
             var cell = (BoardCell)sender;
@@ -252,12 +229,7 @@ namespace SeatBattle.CSharp
             DrawShip(ship, BoardCellState.Ship);
         }
 
-        /// <summary>
-        ///     Returns true if given shio van be placed at a given location
-        /// </summary>
-        /// <param name="ship">Ship to check</param>
-        /// <param name="x">X coordinate to check</param>
-        /// <param name="y">Y coordinate to check</param>
+
         private bool CanPlaceShip(Ship ship, int x, int y)
         {
             var shipRegion = ship.GetShipRegion();
@@ -286,10 +258,7 @@ namespace SeatBattle.CSharp
             return true;
         }
 
-        /// <summary>
-        ///     Redraws a given region on a board
-        /// </summary>
-        /// <param name="region">A region to redraw</param>
+
         private void RedrawRegion(Rect region)
         {
             SuspendLayout();
@@ -326,23 +295,14 @@ namespace SeatBattle.CSharp
                 }
             }
         }
-
-        /// <summary>
-        ///     Draws a ship on a board
-        /// </summary>
-        /// <param name="ship">Ship to draw</param>
-        /// <param name="state">Ship state to draw</param>
+        
+        
         private void DrawShip(Ship ship, BoardCellState state)
         {
             DrawShip(ship, state, false);
         }
 
-        /// <summary>
-        ///     Draws a ship on a board
-        /// </summary>
-        /// <param name="ship">Ship to draw</param>
-        /// <param name="state">Ship state to draw</param>
-        /// <param name="force">True to force ship drawing</param>
+        
         private void DrawShip(Ship ship, BoardCellState state, bool force)
         {
             if (!_drawShips && !force)
@@ -359,9 +319,6 @@ namespace SeatBattle.CSharp
             }
         }
 
-        /// <summary>
-        ///     Removes all ships from board
-        /// </summary>
         public void ClearBoard()
         {
             SuspendLayout();
@@ -377,9 +334,7 @@ namespace SeatBattle.CSharp
             ResumeLayout();
         }
 
-        /// <summary>
-        ///     Adds random ships on a board
-        /// </summary>
+
         public void AddRandomShips()
         {
             SuspendLayout();
@@ -408,10 +363,6 @@ namespace SeatBattle.CSharp
             ResumeLayout();
         }
 
-        /// <summary>
-        ///     Returns a list of ships with random locations. 
-        ///     This is usualy used to begin new game     
-        /// </summary>
         private IList<Ship> GetNewShips()
         {
             var ships = new List<Ship>
