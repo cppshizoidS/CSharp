@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -32,8 +32,7 @@ namespace SeatBattle.CSharp
 
             CreateBoard();
         }
-
-
+        
         private static Label CreateHeaderCell(int x, int y, string text)
         {
             var cell = new Label
@@ -63,10 +62,7 @@ namespace SeatBattle.CSharp
             }
 
         }
-
-        /// <summary>
-        ///     Creates a board layout
-        /// </summary>
+        
         private void CreateBoard()
         {
             SuspendLayout();
@@ -116,11 +112,12 @@ namespace SeatBattle.CSharp
             handler(this, eventArgs);
         }
 
+
         private Ship GetShipAt(int x, int y)
         {
             return _ships.FirstOrDefault(ship => ship.IsLocatedAt(x, y));
         }
-
+        
         private void OnCellMouseDown(object sender, MouseEventArgs e)
         {
             if (Mode == BoardMode.Game || !_drawShips)
@@ -136,8 +133,7 @@ namespace SeatBattle.CSharp
             _draggedShip = DraggableShip.From(ship);
             cell.DoDragDrop(ship, DragDropEffects.Copy | DragDropEffects.Move);
         }
-
-
+        
         private void OnCellQueryContinueDrag(object sender, QueryContinueDragEventArgs e)
         {
             // check Ctrl key state
@@ -156,8 +152,7 @@ namespace SeatBattle.CSharp
             var state = CanPlaceShip(_draggedShip, _draggedShip.X, _draggedShip.Y) ? BoardCellState.ShipDrag : BoardCellState.ShipDragInvalid;
             DrawShip(_draggedShip, state);
         }
-
-
+        
         private void OnCellDragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Ship)))
@@ -177,18 +172,14 @@ namespace SeatBattle.CSharp
                 e.Effect = DragDropEffects.None;
             }
         }
-
-        /// <summary>
-        ///     Handles <see cref="BoardCell"/>'s DragLeave event
-        /// </summary>
+        
         private void OnCellDragLeave(object sender, EventArgs e)
         {
             var rect = _draggedShip.GetShipRegion();
             RedrawRegion(rect);
 
         }
-
-
+        
         private void OnCellDragDrop(object sender, DragEventArgs e)
         {
             var cell = (BoardCell)sender;
@@ -214,13 +205,7 @@ namespace SeatBattle.CSharp
                 e.Effect = DragDropEffects.None;
             }
         }
-
-        /// <summary>
-        ///     Adds a ship on a board
-        /// </summary>
-        /// <param name="ship">Ship to add</param>
-        /// <param name="x">X coordinate of where to add ship</param>
-        /// <param name="y">Y coordinate of where to add ship</param>
+        
         public void AddShip(Ship ship, int x, int y)
         {
             ship.MoveTo(x, y);
@@ -229,7 +214,7 @@ namespace SeatBattle.CSharp
             DrawShip(ship, BoardCellState.Ship);
         }
 
-
+        
         private bool CanPlaceShip(Ship ship, int x, int y)
         {
             var shipRegion = ship.GetShipRegion();
@@ -257,8 +242,7 @@ namespace SeatBattle.CSharp
 
             return true;
         }
-
-
+        
         private void RedrawRegion(Rect region)
         {
             SuspendLayout();
@@ -296,12 +280,10 @@ namespace SeatBattle.CSharp
             }
         }
         
-        
         private void DrawShip(Ship ship, BoardCellState state)
         {
             DrawShip(ship, state, false);
         }
-
         
         private void DrawShip(Ship ship, BoardCellState state, bool force)
         {
@@ -318,7 +300,7 @@ namespace SeatBattle.CSharp
                 }
             }
         }
-
+        
         public void ClearBoard()
         {
             SuspendLayout();
@@ -362,7 +344,7 @@ namespace SeatBattle.CSharp
 
             ResumeLayout();
         }
-
+        
         private IList<Ship> GetNewShips()
         {
             var ships = new List<Ship>
