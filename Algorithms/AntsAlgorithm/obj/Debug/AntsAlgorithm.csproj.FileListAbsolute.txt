@@ -1,0 +1,10 @@
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/bin/Debug/AntsAlgorithm.exe.config
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/bin/Debug/AntsAlgorithm.exe
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/bin/Debug/AntsAlgorithm.pdb
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.csproj.AssemblyReference.cache
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.Views.MainForm.resources
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.Properties.Resources.resources
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.csproj.GenerateResource.cache
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.csproj.CoreCompileInputs.cache
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.exe
+/home/cppshizoid/Рабочий стол/AntAlgorithm-master/AntsAlgorithm/obj/Debug/AntsAlgorithm.pdb
