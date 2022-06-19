@@ -1,0 +1,12 @@
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/bin/Debug/net6.0/TodoList.Domain.deps.json
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/bin/Debug/net6.0/TodoList.Domain.dll
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/bin/Debug/net6.0/ref/TodoList.Domain.dll
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/bin/Debug/net6.0/TodoList.Domain.pdb
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.csproj.AssemblyReference.cache
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.AssemblyInfoInputs.cache
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.AssemblyInfo.cs
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.csproj.CoreCompileInputs.cache
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.dll
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/ref/TodoList.Domain.dll
+/home/cppshizoid/Видео/TodoList/src/TodoList.Domain/obj/Debug/net6.0/TodoList.Domain.pdb
