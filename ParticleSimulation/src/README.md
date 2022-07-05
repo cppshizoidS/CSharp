@@ -1,4 +1,4 @@
-#This is a particle simulation
+This is a particle simulation
 ---
   Write using C# and OpenTK(OpenGL toolkit for C#)
   
